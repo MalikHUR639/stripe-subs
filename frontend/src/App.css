@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.console {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  background-image: url("../public/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 20%;
+  width: 60%;
+  top: 20%;
+  height: 70%;
+  @media (max-width: 768px) {
+    top: 20%;
+    width: 60%;
+  }
+}
+.text {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  font-size: 19px;
+  @media (min-width: 377px) and (max-width: 455px) {
+    top: 50%;
+    font-size: 10px;
+  }
+  @media (min-width: 456px) and (max-width: 768px) {
+    top: 50%;
+    font-size: 14px;
+  }
+  @media (min-width: 320px) and (max-width: 376px) {
+    top: 50%;
+    font-size: 9px;
+  }
+  @media (min-width: 1025px) and (max-width: 1440px) {
+    font-size: 20px;
+  }
+}
+.App {
+  background-image: url("../public/bg_2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.game-provider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.unity-container {
+  margin-top: 2.5rem;
+  height: 85vh;
+  width: 75%;
+}
+.loadingBar {
+  background: #8c8c8c;
+  width: 400px;
+  height: 10px;
+  border-radius: 5px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: absolute;
+  bottom: 50%;
+}
+
+.App .game-provider .loadingBar .loadingBarFill {
+  height: 6px;
+  border-radius: 5px;
+  margin: 2px;
+  background: #ffffff;
+  transition: 0.3s width ease-out;
+}
+.text1 {
+  position: absolute;
+  bottom: 46%;
+  color: black;
+  height: auto;
+}
